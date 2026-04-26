@@ -1,4 +1,4 @@
-import React from "react";
+
 import currencyImg from "../../assets/Currency.png"
 
 const Navbar = ({coin}) => {
