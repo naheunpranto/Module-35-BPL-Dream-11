@@ -25,7 +25,12 @@ const SelectedPlayers = ({
 
   return (
     <div className="space-y-5">
-      {selectedPlayers.map((player, ind) => {
+      {selectedPlayers.length === 0 ? 
+      <div className="h-100 flex items-center justify-center flex-col gap-4">
+        <h2 className="font-semibold text-xl">No players selected yet</h2>
+        <p>Go to Available tab to select players</p>
+      </div>
+      : selectedPlayers.map((player, ind) => {
         return (
           <div
             key={ind}
